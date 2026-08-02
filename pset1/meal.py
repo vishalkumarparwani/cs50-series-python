@@ -18,7 +18,6 @@ def convert(time):
     minutes = float(minutes)
 
     return hours + (minutes / 60)
-s
 
 if __name__ == "__main__":
     main()
