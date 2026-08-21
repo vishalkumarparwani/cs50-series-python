@@ -3,19 +3,15 @@ def main():
 
     try:
         while True:
-            name = input("Name: ")
-            names.append(name)
+            names.append(input("Name: "))
 
     except EOFError:
-        pass
-
+        print()
 
     if len(names) == 1:
         result = names[0]
-
     elif len(names) == 2:
         result = " and ".join(names)
-
     else:
         result = ", ".join(names[:-1]) + ", and " + names[-1]
 
